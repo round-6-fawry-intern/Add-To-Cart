@@ -1,0 +1,19 @@
+<div class="container-fluid" style="background-color: #eee;">
+    <section style="background-color: #eee;">
+        <div class="container py-5">
+            <!-- <div class="rounded-circle d-flex align-items-center justify-content-center">
+                @for (item of categoryList; track $index) {
+                <button class="btn btn-outline-success mx-2">{{item}}</button>
+                }
+            </div> -->
+            <div class="row">
+
+                @for (item of productList; track $index) {
+                <div class="col-md-12 col-lg-3 pt-2 mb-4 mb-lg-0">
+                    <app-product-cart [product]="item"></app-product-cart>
+                </div>
+                }
+            </div>
+        </div>
+    </section>
+</div>
